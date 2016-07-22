@@ -163,7 +163,7 @@ h4{
     
 }
 
-btn {
+.btn {
     background-color: #ff1256;
     border: none;
     color: #ffffff;
@@ -171,7 +171,9 @@ btn {
     text-transform: uppercase;
     line-height: 1.333em;
     text-align: center;
-    box-shadow: 1.5px 2.598px 0px 0px rgba(178, 30, 73, 0.4);
+    box-shadow: 2px 2px 0 #DADADA;
+
+    /* this is what I extracted from photoshop - box-shadow: 1.5px 2.598px 0 0 rgba(178, 30, 73, 0.4);*/
 
 }
 
