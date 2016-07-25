@@ -189,25 +189,48 @@ img {
 
 header {
     width: 100%;
+    background: #DDD;
 }
 
 #logo {
     width: 90%;
     margin: auto;
     /* centers the logo */
-    background: #000;   /* added this as the image for logo is white text on grey background. To get white text on black background, added black background here*/
-    max-width: 312px;
+    background: #000;
+    /* added this as the image for logo is white text on grey background. To get white text on black background, added black background here*/
+    max-width: 330px;
+    padding: 5%;
 }
 
 nav {
     width: 100%;
+    margin: auto;
 }
 
 nav ul {
     margin: auto;
     /*  centers the navigation items */
+    list-style: none;
 }
 
+nav ul li {
+    background: #DDDDDD;
+    border-bottom: 1px solid #CCCCCC;
+    /* adds the horizontal rule for mobile version */
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+nav ul li a {
+    color: #222222;
+}
+
+.subnav {
+    display: none;
+}
 
 
 /* Main Content ============================= */
@@ -278,6 +301,12 @@ aside {
 .mission {
     width: 100%;
     float: left;
+}
+
+.mission h1 {
+    font-weight: bold;
+    font-size: 1.3125rem; /* 21px */
+    line-height: 1.125em;
 }
 
 .team {}
@@ -412,6 +441,9 @@ footer {
 
 @media (min-width: 768px) {
     /*  for tablet styles */
+    header {
+        max-width: 940px;
+    }
     #logo {
         width: 40%;
         float: left;
@@ -482,6 +514,9 @@ footer {
 
 @media (min-width: 940px) {
     /*  for desktop styles */
+    header {
+        max-width: 940px;
+    }
     .top-img {
         width: 100%;
         max-width: 620px;
