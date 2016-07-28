@@ -45,12 +45,11 @@ html {
 hr {
     display: block;
     height: 1px;
-    border: none;
+    border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
 }
-
 
 
 /*
@@ -122,7 +121,6 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     color: #222222;
-    background: #eeeeee;
 }
 
 a {
@@ -166,11 +164,7 @@ h3 {
     line-height: 1;
 }
 
-h4 {
-    font-size: 1.2;
-    font-weight: bold;
-    line-height: 1;
-}
+h4 {}
 
 .btn {
     background-color: #ff1256;
@@ -192,7 +186,6 @@ img {
     width: 100%;
     height: auto;
 }
-
 
 
 /* Header ============================= */
@@ -251,13 +244,13 @@ nav ul li.current a {
 
 
 /* Main Content ============================= */
+
 #main-content {
     clear: both;
     width: 94%;
     margin: auto;
     max-width: 320px;
 }
-
 
 .hero-area {
     width: 100%;
@@ -268,14 +261,8 @@ nav ul li.current a {
 }
 
 .top-img {
-    width: 90%;
+    width: 100%;
     height: auto;
-    margin: auto;
-    padding: 5% 2%;
-}
-
-.top-info {
-    border-bottom: 1px solid #ccc;
 }
 
 
@@ -287,17 +274,6 @@ aside {
 
 .newsletter {
     width: 100%;
-}
-
-.newsletter input {
-    width: 100%;
-    display: block;
-}
-
-.newsletter-btn {
-    margin-top: 2%;
-    padding: 5%;
-    box-shadow: 2px 2px 0px #888888;
 }
 
 .upcoming {
@@ -315,89 +291,28 @@ aside {
     width: 100%;
 }
 
-.feed .title {
-    font-size: 1rem;
-    font-weight: 600;
-}
 .feed-item {
     clear: both;
-    margin-left: 2%;
-}
-
-.feed-type {
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 0;
 }
 
 .feed-image {
-    width: 45%;
-    margin-top: 2%;
-    margin-left: 0.5%;
+    width: 44%;
     margin-right: 6%;
     float: left;
-    border: 2px solid #ccc;
 }
 
-.feed-details {
-    width: 45%;
-    float: left;
-    margin-top: -15px;
-}
-
-.feed-details a {
-    font-weight: 600;
-    color: #000;
-}
 .feed-item p {
     display: none;
 }
 
-.divider {
-    padding-bottom: 0;
-}
 
-/* ABOUT US PAGE ============================= */
+/* ABOUT PAGE ============================= */
 
-.about-us {
-    width: 100%;
-}
+
 
 .contact-info {
     width: 80%;
     margin: auto;
-    padding-bottom: 5%;
-}
-
-
-/* used this link for solution - http://stackoverflow.com/questions/1713048/how-to-style-dt-and-dd-so-they-are-on-the-same-line */
-
-dl {
-    width: 100%;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-}
-
-dt {
-    font-weight: bold;
-    float: left;
-    width: 40%;
-    padding: 0;
-    margin: 0;
-}
-
-dd {
-    float: left;
-    width: 60%;
-    padding: 0;
-    margin: 0;
-    padding-bottom: 5%;
-}
-
-address {
-    font-style: normal;
 }
 
 .map-container {
@@ -419,8 +334,13 @@ address {
 }
 
 .mission {
-    width: 80%;
-    margin: auto;
+    width: 90%;
+    padding-left: 10%;
+    /*padding-right: 5%; this doesn't work. need to add it to .mission p selector - see below */
+}
+
+.mission p {
+    padding-right: 5%;
 }
 
 .team {
@@ -587,50 +507,22 @@ footer {
 
 @media (min-width: 768px) {
     /*  for tablet styles */
-    .grey-line {
-        width: 100%;
-        height: 2em;
-        position: absolute;
-        top: 30px;
-        background: #ddd;
-    }
     header {
-        width: 96%;
-        max-width: 768px;
-        margin: auto;
+        max-width: 940px;
     }
     #logo {
-        width: 30%;
+        width: 40%;
         float: left;
-        max-width: 300px;
-        padding: 3%;
-        position: relative;
-        z-index: 100;
     }
     nav {
         width: 60%;
         float: right;
-        /*margin-left: 6%;*/
-    }
-    nav ul {
-        width: 100%;
-        float: right;
-        list-style: none;
-    }
-    nav ul li {
-        background: #eee;
-        /*reset to light gray body background*/
-        float: left;
-        /* this is what makes the nav items on a single line. Otherwise it displays in 3 lines */
-        padding: 8% 4%;
     }
     #main-content {
         clear: both;
         width: 94%;
         margin: auto;
         max-width: 768px;
-        border-bottom: 1px solid #CCCCCC;
-        /* adds the horizontal rule */
     }
     /*  Featured news item section ============== */
     .top-story {
@@ -680,15 +572,6 @@ footer {
     }
     .detail .newsletter input {
         display: inline;
-    }
-    /* ABOUT US PAGE ============================= */
-    .contact-info {
-        width: 40%;
-        float: left;
-    }
-    .map-container {
-        width: 60%;
-        float: left;
     }
     /*  footer ================ */
     footer {
