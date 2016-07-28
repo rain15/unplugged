@@ -493,7 +493,7 @@ footer {
     margin: auto;
     background-color: #000;
     max-width: 150px;
-    padding: 5%;
+    padding: 1% 2%;
 }
 
 
@@ -584,6 +584,8 @@ footer {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+/* Media Query for tablet ============================= */
 
 @media (min-width: 768px) {
     /*  for tablet styles */
@@ -701,6 +703,8 @@ footer {
     }
 }
 
+/* Media Query for desktop ============================= */
+
 @media (min-width: 940px) {
     /*  for desktop styles */
     header {
@@ -717,6 +721,8 @@ footer {
         max-width: 620px;
     }
 }
+
+/* Media Query for print ============================= */
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
