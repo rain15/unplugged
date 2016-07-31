@@ -290,10 +290,9 @@ nav ul li.current a {
 
 /* Sidebar ============================= */
 
-
-/*aside {
+aside {
     width: 100%;
-}*/
+}
 
 .newsletter {
     width: 100%;
@@ -413,10 +412,6 @@ nav ul li.current a {
 
 .top-story .news-detail {
     padding-bottom: 0;
-}
-
-.news-detail-aside {
-    padding-left: 4%;
 }
 
 .news-detail {
@@ -663,23 +658,6 @@ footer {
 
 /* Media Query for tablet ============================= */
 
-
-/* I was having issues with news-detail-aside in news-detail html page as in tablet, float has to be cleared for that class
-By making tablet media query specific with both min-width and max-width, I was able to fix the issue where tablet's news-detail-aside was overriding desktop's news-detail-aside.
-*/
-
-@media (min-width: 768px) and (max-width:939px) {
-    .news-detail-aside {
-        clear: both;
-        padding: 2% 4%;
-    }
-}
-
-
-/*
-I still have a generic tablet version below as I needed rest to cascade to desktop
- */
-
 @media (min-width: 768px) {
     /*  for tablet styles */
     .grey-line {
@@ -864,12 +842,16 @@ I still have a generic tablet version below as I needed rest to cascade to deskt
     .news-detail {
         clear: both;
     }
+    .news-detail-aside {
+        clear: both;
+        padding: 2% 4%;
+    }
     .news-detail-aside hr {
         display: none;
     }
     .news-detail-md {
         clear: both;
-        display: block;
+        display: block; 
         margin-bottom: 4%;
     }
     /* ABOUT US PAGE ============================= */
@@ -1027,71 +1009,9 @@ I still have a generic tablet version below as I needed rest to cascade to deskt
     .final-divider {
         padding-top: 2%;
     }
-    /* NEWS DETAIL PAGE ============================= */
-    .clear-float {
-        clear: both;
-    }
-    .news-detail-main {
-        width: 60%;
-        float: left;
-        padding-right: 4%;
-        border-right: 1px solid #ccc;
-    }
-    .news-detail-aside {
-        width: 26%;
-        float: left;
-        padding-top: 3%;
-        padding-left: 2%;
-    }
-    .news-detail-aside h3 {
-        font-size: 1.5rem;
-    }
-    .news-detail-main .top-img hr {
-        display: none;
-    }
-    .top-img img {
-        width: 100%;
-        clear: both;
-    }
-    .detail-sub-heading {
-        clear: both;
-        width: 100%;
-        margin-left: 0;
-        float: none;
-    }
-    .news-detail-form {
-        width: 100%;
-    }
-    .newsletter input {
-        width: 100%;
-        display: block;
-    }
-    .newsletter input[type=text] {
-        width: 100%;
-        float: none;
-    }
-    .newsletter input[type=button] {
-        margin-top: 4%;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-        padding: 4% 0;
-        float: none;
-    }
-    .news-detail-aside hr {
-        display: block;
-        /* It's -8% because the hr needs to touch the left vertical hr border .*/
-        margin-left: -8%;
-    }
-
-    
     /*  footer ================ */
     footer {
         padding-top: 2%;
-    }
-    .news-detail-md {
-        display: block;
-        padding-bottom: 4%;
     }
 }
 

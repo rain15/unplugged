@@ -24,13 +24,14 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <!-- Add your site or application content here -->
+    <div class="grey-line"></div>
     <header>
         <h1 id="logo"><img src="img/logo.png" alt="Unplugged"></h1>
         <nav>
             <ul>
                 <li><a href="#"><i class="fa fa-music"></i> Concerts</a></li>
                 <li><a href="#"><i class="fa fa-headphones"></i> Reviews</a></li>
-                <li><a href="#"><i class="fa fa-users"></i> About Us</a>
+                <li><a href="about"><i class="fa fa-users"></i> About Us</a>
                     <ul class="subnav">
                         <li><i class="fa fa-question-circle"></i> <a href="#">FAQ</a></li>
                         <li><a href="#">Who We Are & Contact</a></li>
@@ -47,34 +48,41 @@
                 </figure>
             </article>
             <div class="top-info">
-                <h1>Wilco Announces a New Album and Summer Tour</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas cumque eveniet est beatae iste cum harum quam voluptate vero illum vel dolor.</p>
+                <h1><a href="news/news-detail.html">Wilco Announces a New Album and Summer Tour</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas cumque eveniet est beatae iste cum harum quam voluptate vero illum vel.</p>
             </div>
-            <!-- SIDE BAR -->
-            <aside class="sidebar">
-                <section class="newsletter">
-                    <h3>Newsletter Signup</h3>
-                    <form>
-                        <input type="text" class="newsletter-text">
-                        <input type="button" class="btn newsletter-btn" value="Sign Up">
-                    </form>
-                </section>
-                <!-- hide on mobile version -->
-                <section class="upcoming">
-                    <h2>Upcoming Concerts</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam nemo reprehenderit ut sequi magnam at, quidem laudantium placeat non necessitatibus id ipsum voluptatum cupiditate commodi eaque deleniti perferendis eius.</p>
-                    <a href="#" class="btn"><i class="fa fa-music"></i> See All</a>
-                </section>
-                <!-- hide on mobile version -->
-                <section class="faq">
-                    <h2>Frequently Asked Questions</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium ea accusantium, tenetur facere consectetur! Culpa magni, aperiam sapiente error voluptatibus. Repudiandae unde nihil aliquid inventore fugit esse maiores placeat.</p>
-                    <a href="#" class="btn"><i class="fa fa-question-circle"></i> See All</a>
-                </section>
-            </aside>
         </section>
+        <!-- hero-area -->
+        <hr class="toggle-hr">
+        <!-- SIDE BAR -->
+        <aside class="sidebar">
+            <section class="newsletter">
+                <h3>Newsletter Signup</h3>
+                <form>
+                    <input type="text" class="newsletter-text">
+                    <input type="button" class="btn newsletter-btn" value="Sign Up">
+                </form>
+            </section>
+            <!-- hide on mobile version -->
+            <section class="upcoming">
+                <hr class="full-container">
+                <h3>Upcoming Concerts</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam nemo reprehenderit ut sequi magnam at, quidem laudantium placeat non necessitatibus id ipsum voluptatum cupiditate commodi eaque deleniti perferendis eius.</p>
+                <!-- added href instead of button to add font awesome icons -->
+                <a href="#" class="btn"><i class="fa fa-music"></i>&nbsp;&nbsp;See All</a>
+            </section>
+            <!-- hide on mobile version -->
+            <section class="faq">
+                <hr class="full-container">
+                <h3>Frequently Asked Questions</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium ea accusantium, tenetur facere consectetur! Culpa magni, aperiam sapiente error voluptatibus. Repudiandae unde nihil aliquid inventore fugit esse maiores placeat.</p>
+                <a href="#" class="btn"><i class="fa fa-question-circle"></i> &nbsp;See All</a>
+                <hr class="full-container push-down">
+            </section>
+        </aside>
         <!-- Recent News and Reviews -->
         <section class="feed">
+            <hr class="hr-lg">
             <h3 class="title">Recent News & Reviews</h3>
             <article class="feed-item ">
                 <h3 class="feed-type">News</h3>
@@ -82,7 +90,7 @@
                     <a href="#"><img src="img/feed-1.png" alt="Arcade Fire"></a>
                 </figure>
                 <div class="feed-details">
-                    <h4><a href="#">Arcade Fire Hints About a New Side Project in a Recent Interview - What Will it Be?</a></h4>
+                    <h4><a href="news/news-detail.html">Arcade Fire Hints About a New Side Project in a Recent Interview - What Will it Be?</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
                 </div>
             </article>
