@@ -116,14 +116,12 @@ Blue: #23a4cc;
 
 /* Global Styles ============================= */
 
-
 body,
 html {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     color: #222222;
     background: #eeeeee;
-    
 }
 
 a {
@@ -450,6 +448,8 @@ nav ul li.current a {
 .top-story .news-detail {
     padding-bottom: 0;
 }
+
+
 
 .news-detail-aside {
     padding-left: 4%;
@@ -919,7 +919,7 @@ I still have a generic tablet version below as I needed rest to cascade to deskt
     }
     /* NEWS DETAIL PAGE ============================= */
     .top-story-detail {
-        width: 90%;
+        width: 96%;
     }
     .top-img img {
         width: 40%;
@@ -934,13 +934,7 @@ I still have a generic tablet version below as I needed rest to cascade to deskt
         padding-bottom: 4%;
         border-bottom: 1px solid #ccc;
     }
-    /* CSS-TRICKS source for horizontal line - https://css-tricks.com/forums/topic/trick-get-a-horizontal-line-without-using/ */
-    /*.home-hero-area:after {
-        width: 100%;
-        content: " ";
-        display: block;
-        border-bottom: 1px solid #ccc;
-    }*/
+    
     .home-top-story {
         width: 60%;
         float: left;
@@ -962,6 +956,10 @@ I still have a generic tablet version below as I needed rest to cascade to deskt
         margin-left: 4%;
         float: left;
     }
+    
+    .add-space {
+        padding-top: 10%;
+    }
     .news-detail-title {
         margin-top: 0;
     }
@@ -971,13 +969,28 @@ I still have a generic tablet version below as I needed rest to cascade to deskt
         clear: both;
         /*padding-bottom: 2%;*/
     }
+    .news-detail-wrapper {
+        padding-top: 4%;
+        padding-left: 2%;
+    }
+    /*.detail-sub-heading {
+        padding-top: 4%;
+    }*/
+    /* article and figure had margin and padding. so need to take them out */
+    .news-detail-main article {
+        margin: 0;
+        padding: 0;
+    }
+    .news-detail-main figure {
+        margin: 0;
+        padding: 0;
+    }
     .long-version {
         display: block;
     }
     .short-version {
         display: none;
     }
-
     .newsletter input {
         width: 90%;
         display: inline;
@@ -1236,20 +1249,29 @@ I still have a generic tablet version below as I needed rest to cascade to deskt
     .clear-float {
         clear: both;
     }
+    .add-space {
+        display: none;
+    }
+    .news-detail-wrapper {
+        overflow: auto;
+        /*line-height: 4em;*/
+        border-bottom: 1px solid #ccc;
+    }
     .news-detail-main {
         width: 60%;
         float: left;
         padding-right: 4%;
+        padding-top: 0;
         border-right: 1px solid #ccc;
     }
     .news-detail-aside {
         width: 26%;
         float: left;
-        padding-top: 3%;
         padding-left: 2%;
     }
     .news-detail-aside h3 {
         font-size: 1.5rem;
+        margin-top: 0;
     }
     .news-detail-main .top-img hr {
         display: none;
@@ -1293,7 +1315,7 @@ I still have a generic tablet version below as I needed rest to cascade to deskt
         padding-top: 2%;
     }
     .news-detail-md {
-        display: block;
+        display: none;
         padding-bottom: 4%;
     }
 }
