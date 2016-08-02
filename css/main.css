@@ -252,7 +252,7 @@ nav ul li a {
 
 /* Tried using just .current to specify color, but it didn't work. Aleia mentioned that sometimes you have to be specific when you are in the nav element */
 
-nav ul li.current a {
+nav ul li .current a {
     color: #ff1256;
 }
 
