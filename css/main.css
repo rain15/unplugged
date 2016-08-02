@@ -270,6 +270,10 @@ nav ul li.current a {
     max-width: 320px;
 }
 
+.home-top-wrapper {
+    padding-top: 2%;
+}
+
 .hero-area {
     width: 100%;
 }
@@ -449,8 +453,6 @@ nav ul li.current a {
     padding-bottom: 0;
 }
 
-
-
 .news-detail-aside {
     padding-left: 4%;
 }
@@ -588,6 +590,38 @@ address {
 }
 
 
+/* REVIEWS MAIN PAGE ============================= */
+
+.reviews-feed-details {
+    width: 45%;
+    float: left;
+}
+
+.reviews-feed-details h4 {
+    margin-top: 3%;
+}
+
+.sidebar-write-review {
+    border-top: 1px solid #ccc;
+}
+
+.sidebar-write-review-form input {
+    width: 100%;
+    display: block;
+}
+
+.sidebar-write-review-form p {
+    margin-bottom: 0;
+}
+
+.reviews-feed-img {
+    margin-left: 0;
+}
+
+
+/* REVIEWS DETAILS PAGE ============================= */
+
+
 /* Footer ============================= */
 
 footer {
@@ -714,6 +748,12 @@ By making tablet media query specific with both min-width and max-width, I was a
     .news-detail-aside {
         clear: both;
         padding: 2% 4%;
+    }
+
+    .aside-write-review {
+        clear: both;
+        width: 90%;
+        float: none;
     }
 }
 
@@ -934,7 +974,6 @@ I still have a generic tablet version below as I needed rest to cascade to deskt
         padding-bottom: 4%;
         border-bottom: 1px solid #ccc;
     }
-    
     .home-top-story {
         width: 60%;
         float: left;
@@ -956,7 +995,6 @@ I still have a generic tablet version below as I needed rest to cascade to deskt
         margin-left: 4%;
         float: left;
     }
-    
     .add-space {
         padding-top: 10%;
     }
@@ -1031,6 +1069,74 @@ I still have a generic tablet version below as I needed rest to cascade to deskt
         width: 60%;
         float: left;
     }
+    /*  REVIEWS PAGE ================ */
+    .reviews-sub-hero-area {
+        width: 100%;
+        padding-top: 4%;
+    }
+    .reviews-top-story{
+        width: 60%;
+        float: left;
+        padding-right: 2%;
+        padding-bottom: 2%;
+        
+    }
+    
+    /* need to move this to exclusive tablet version above as it's overwriting desktop version for some reason. TODO - why? */
+    
+     /*.aside-write-review {
+        clear: both;
+        width: 90%;
+        float: none;
+    }*/
+    .reviews-top-info {
+        width: 26%;
+        float: left;
+        /*margin-top: 4%;*/
+    }
+    .reviews-top-info h2 {
+        margin-top: 0;
+    }
+    .reviews-top-img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    /*-----------------------*/
+    .sidebar-write-review {
+        padding-bottom: 2%;
+        margin-bottom: 9%;
+    }
+    .sidebar-write-review-form {
+        width: 100%;
+    }
+    .sidebar-write-review-form p {
+        width: 60%;
+        float: left;
+        margin-top: 0;
+    }
+    .sidebar-write-review-form form {
+        width: 40%;
+        float: left;
+    }
+    .reviews-feed {
+        clear: both;
+        width: 100%;
+        border-top: 1px solid #ccc;
+        border-right: 0;
+    }
+    .reviews-feed .feed-image {
+        width: 20%;
+        float: left;
+    }
+    .reviews-feed-details {
+        width: 70%;
+        float: left;
+    }
+    .buffer {
+        margin-top: 4%;
+    }
+    /*  REVIEWS DETAIL PAGE ================ */
     /*  footer ================ */
     footer {
         width: 100%;
@@ -1080,6 +1186,7 @@ I still have a generic tablet version below as I needed rest to cascade to deskt
     /*  for NEWS HOME PAGE ============== */
     .home-top-wrapper {
         overflow: auto;
+        padding-top: 0;
         border-bottom: 1px solid #ccc;
         /* added line-height as the border-bottom would not align with the vertical line separating image and sidebar till line-height was adjusted to this div. */
         /* read the last line of this url for solution - http://stackoverflow.com/questions/19815535/how-do-i-remove-the-space-between-div-and-top-of-page */
@@ -1310,6 +1417,87 @@ I still have a generic tablet version below as I needed rest to cascade to deskt
         /* It's -8% because the hr needs to touch the left vertical hr border .*/
         margin-left: -8%;
     }
+    /*  REVIEWS MAIN PAGE ================ */
+    /*.reviews-nav ul {
+        padding-top: 4%;
+    }*/
+    .reviews-top-wrapper {
+        width: 100%;
+        margin-top: 4%;
+        padding-top: 4%;
+    }
+    .reviews-sub-top-wrapper {
+        width: 100%;
+    }
+    .reviews-hero-area {
+        width: 100%;
+        overflow: auto;
+    }
+    .reviews-feed-details p {
+        display: block;
+    }
+    .reviews-sub-hero-area {
+        width: 70%;
+        float: left;
+        padding-top: 3%;
+        border-bottom: 0;
+        border-right: 1px solid #ccc;
+    }
+    .reviews-sub-top-wrapper section {
+        margin: 0;
+        padding: 0;
+    }
+    .reviews-sub-top-wrapper article {
+        margin: 0;
+        padding: 0;
+    }
+    .reviews-top-info {
+        width: 90%;
+        padding: 0;
+        padding-top: 2%;
+        border-bottom: 0;
+        float: left;
+    }
+    .reviews-top-info h2 {
+        font-size: 2rem;
+    }
+    .reviews-feed-details h4 {
+        margin-top: 3%
+    }
+    .aside-write-review {
+
+        width: 26%;
+        float: left;
+        padding-left: 2%;
+        padding-bottom: 2%;
+        border-bottom: 1px solid #ccc;
+    }
+    .sidebar-write-review {
+        width: 100%;
+        padding-top: 3%;
+        border-top: 0;
+        border-bottom: 2%;
+    }
+    .sidebar-write-review-form {
+        clear: both;
+    }
+    .sidebar-write-review-form h3 {
+        margin-bottom: 0;
+    }
+    .sidebar-write-review-form p {
+        width: 100%;
+        float: none;
+    }
+    .sidebar-write-review-form form {
+        width: 100%;
+        float: none;
+        padding-top: 4%;
+        border-bottom: 1px solid #ccc;
+    }
+    .divider {
+        width: 90%;
+    }
+    /*  REVIEWS DETAIL PAGE ================ */
     /*  footer ================ */
     footer {
         padding-top: 2%;

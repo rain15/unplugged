@@ -26,7 +26,7 @@
     <!-- Add your site or application content here -->
     <div class="grey-line"></div>
     <header>
-        <h1 id="logo"><img src="img/logo.png" alt="Unplugged"></h1>
+        <h1 id="logo"><a href="."><img src="img/logo.png" alt="Unplugged"></a></h1>
         <nav>
             <ul>
                 <li><a href="#"><i class="fa fa-music"></i> Concerts</a></li>
@@ -42,123 +42,124 @@
     </header>
     <div id="main-content">
         <div class="home-top-wrapper">
-        <section class="home-hero-area">
-            <article class="home-top-story">
-                <figure class="home-top-img">
-                    <img src="img/top-story-photo.png" alt="Hero Image">
+            <section class="home-hero-area">
+                <article class="home-top-story">
+                    <figure class="home-top-img">
+                        <img src="img/top-story-photo.png" alt="Hero Image">
+                    </figure>
+                </article>
+                <div class="home-top-info">
+                    <h2><a href="news/news-detail.html">Wilco Announces a New Album and Summer Tour</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas cumque eveniet est beatae iste cum harum quam voluptate vero illum vel.</p>
+                </div>
+            </section>
+            <!-- hero-area -->
+            <!-- SIDE BAR -->
+            <aside class="sidebar">
+                <section class="home-newsletter">
+                    <div class="home-newsletter-form">
+                        <h3>Newsletter Signup</h3>
+                        <form>
+                            <input type="text" class="newsletter-text">
+                            <input type="button" class="btn home-newsletter-btn" value="Sign Up">
+                        </form>
+                    </div>
+                </section>
+                <!-- hide on mobile version -->
+                <section class="home-upcoming">
+                    <div class="upcoming">
+                        <h3>Upcoming Concerts</h3>
+                        <p class="long-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam nemo reprehenderit ut sequi magnam at, quidem laudantium placeat non necessitatibus.</p>
+                        <p class="short-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam nemo reprehenderit.</p>
+                        <!-- added href instead of button to add font awesome icons -->
+                        <a href="#" class="btn"><i class="fa fa-music"></i>&nbsp;&nbsp;See All</a>
+                    </div>
+                </section>
+                <!-- hide on mobile version -->
+                <section class="home-faq">
+                    <div class="faq">
+                        <h3>Frequently Asked Questions</h3>
+                        <p class="long-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium ea accusantium, tenetur facere consectetur! Culpa magni, aperiam sapiente error voluptatibus.</p>
+                        <p class="short-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam nemo reprehenderit.</p>
+                        <a href="#" class="btn"><i class="fa fa-question-circle"></i> &nbsp;See All</a>
+                    </div>
+                </section>
+            </aside>
+        </div>
+        <!-- home-top-wrapper -->
+        <!-- Recent News and Reviews -->
+        <section class="feed">
+            <h3 class="title">Recent News & Reviews</h3>
+            <article class="feed-item ">
+                <h3 class="feed-type">News</h3>
+                <figure class="feed-image">
+                    <a href="#"><img src="img/feed-1.png" alt="Arcade Fire"></a>
                 </figure>
+                <div class="feed-details">
+                    <h4><a href="news/news-detail.html">Arcade Fire Hints About a New Side Project in a Recent Interview - What Will it Be?</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
+                </div>
             </article>
-            <div class="home-top-info">
-                <h2><a href="news/news-detail.html">Wilco Announces a New Album and Summer Tour</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas cumque eveniet est beatae iste cum harum quam voluptate vero illum vel.</p>
-            </div>
+            <article class="feed-item">
+                <hr>
+                <h3 class="feed-type">News</h3>
+                <figure class="feed-image">
+                    <a href="#"><img src="img/feed-2.png" alt="Summer Festival Roundup"></a>
+                </figure>
+                <div class="feed-details">
+                    <h4><a href="#">Our Roundup of 2015's Top SummerFestivals & Free Shows</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
+                </div>
+            </article>
+            <article class="feed-item">
+                <hr>
+                <h3 class="feed-type">News</h3>
+                <figure class="feed-image">
+                    <a href="#"><img src="img/feed-3.png" alt="Laura Marling and Johnny Flynn"></a>
+                </figure>
+                <div class="feed-details">
+                    <h4><a href="#">Laura Marling and Johnny Flynn Are Teaming Up Again - Will it be an Album or a Single?</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
+                </div>
+            </article>
+            <article class="feed-item">
+                <hr>
+                <h3 class="feed-type">Review</h3>
+                <figure class="feed-image">
+                    <a href="#"><img src="img/feed-4.png" alt="Mumford & Sons"></a>
+                </figure>
+                <div class="feed-details">
+                    <h4><a href="#">Mumford & Sons New Album "Wilder Mind" - Oh yes! or Oh No!?</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
+                </div>
+            </article>
+            <article class="feed-item">
+                <hr>
+                <h3 class="feed-type">Review</h3>
+                <figure class="feed-image">
+                    <a href="#"><img src="img/feed-5.png" alt="Jose Gonzalez New Album"></a>
+                </figure>
+                <div class="feed-details">
+                    <h4><a href="#">Jose Gonzalez's New Album  "Vestiges & Claws" - Hit or Miss?</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
+                </div>
+            </article>
+            <article class="feed-item">
+                <hr>
+                <h3 class="feed-type">News</h3>
+                <figure class="feed-image">
+                    <a href="#"><img src="img/feed-6.png" alt="The National Band"></a>
+                </figure>
+                <div class="feed-details">
+                    <h4><a href="#">The National Surprises Us With a New Single - Will a New Album follow?</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
+                </div>
+            </article>
+            <!-- The last horizontal rule before the footer was not aligning where it's supposed to. So I created the pseudo article below to add that last <hr> . -->
+            <article class="feed-item final-divider">
+                <hr>
+            </article>
         </section>
-        <!-- hero-area -->
-        <!-- SIDE BAR -->
-        <aside class="sidebar">
-            <section class="home-newsletter">
-                <div class="home-newsletter-form">
-                    <h3>Newsletter Signup</h3>
-                    <form>
-                        <input type="text" class="newsletter-text">
-                        <input type="button" class="btn home-newsletter-btn" value="Sign Up">
-                    </form>
-                </div>
-            </section>
-            <!-- hide on mobile version -->
-            <section class="home-upcoming">
-                <div class="upcoming">
-                    <h3>Upcoming Concerts</h3>
-                    <p class="long-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam nemo reprehenderit ut sequi magnam at, quidem laudantium placeat non necessitatibus.</p>
-                    <p class="short-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam nemo reprehenderit.</p>
-                    <!-- added href instead of button to add font awesome icons -->
-                    <a href="#" class="btn"><i class="fa fa-music"></i>&nbsp;&nbsp;See All</a>
-                </div>
-            </section>
-            <!-- hide on mobile version -->
-            <section class="home-faq">
-                <div class="faq">
-                    <h3>Frequently Asked Questions</h3>
-                    <p class="long-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium ea accusantium, tenetur facere consectetur! Culpa magni, aperiam sapiente error voluptatibus.</p>
-                    <p class="short-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam nemo reprehenderit.</p>
-                    <a href="#" class="btn"><i class="fa fa-question-circle"></i> &nbsp;See All</a>
-                </div>
-            </section>
-        </aside>
-    </div> <!-- home-top-wrapper -->
-    <!-- Recent News and Reviews -->
-    <section class="feed">
-        <h3 class="title">Recent News & Reviews</h3>
-        <article class="feed-item ">
-            <h3 class="feed-type">News</h3>
-            <figure class="feed-image">
-                <a href="#"><img src="img/feed-1.png" alt="Arcade Fire"></a>
-            </figure>
-            <div class="feed-details">
-                <h4><a href="news/news-detail.html">Arcade Fire Hints About a New Side Project in a Recent Interview - What Will it Be?</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
-            </div>
-        </article>
-        <article class="feed-item">
-            <hr>
-            <h3 class="feed-type">News</h3>
-            <figure class="feed-image">
-                <a href="#"><img src="img/feed-2.png" alt="Summer Festival Roundup"></a>
-            </figure>
-            <div class="feed-details">
-                <h4><a href="#">Our Roundup of 2015's Top SummerFestivals & Free Shows</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
-            </div>
-        </article>
-        <article class="feed-item">
-            <hr>
-            <h3 class="feed-type">News</h3>
-            <figure class="feed-image">
-                <a href="#"><img src="img/feed-3.png" alt="Laura Marling and Johnny Flynn"></a>
-            </figure>
-            <div class="feed-details">
-                <h4><a href="#">Laura Marling and Johnny Flynn Are Teaming Up Again - Will it be an Album or a Single?</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
-            </div>
-        </article>
-        <article class="feed-item">
-            <hr>
-            <h3 class="feed-type">Review</h3>
-            <figure class="feed-image">
-                <a href="#"><img src="img/feed-4.png" alt="Mumford & Sons"></a>
-            </figure>
-            <div class="feed-details">
-                <h4><a href="#">Mumford & Sons New Album "Wilder Mind" - Oh yes! or Oh No!?</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
-            </div>
-        </article>
-        <article class="feed-item">
-            <hr>
-            <h3 class="feed-type">Review</h3>
-            <figure class="feed-image">
-                <a href="#"><img src="img/feed-5.png" alt="Jose Gonzalez New Album"></a>
-            </figure>
-            <div class="feed-details">
-                <h4><a href="#">Jose Gonzalez's New Album  "Vestiges & Claws" - Hit or Miss?</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
-            </div>
-        </article>
-        <article class="feed-item">
-            <hr>
-            <h3 class="feed-type">News</h3>
-            <figure class="feed-image">
-                <a href="#"><img src="img/feed-6.png" alt="The National Band"></a>
-            </figure>
-            <div class="feed-details">
-                <h4><a href="#">The National Surprises Us With a New Single - Will a New Album follow?</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
-            </div>
-        </article>
-        <!-- The last horizontal rule before the footer was not aligning where it's supposed to. So I created the pseudo article below to add that last <hr> . -->
-        <article class="feed-item final-divider">
-            <hr>
-        </article>
-    </section>
     </div>
     <!-- main-content -->
     <!-- Footer -->
