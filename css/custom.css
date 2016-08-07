@@ -1071,10 +1071,26 @@ footer {
         padding-right: 3%;
         border-right: 1px solid #ccc;
     }
+    /* fixed the issue where newsletter signup horizontal rule was not touching vertical rule between news detail section and newsletter aside 
+    http://stackoverflow.com/questions/4131490/any-way-to-limit-border-length
+    used relative and absolute positioning to achieve this.
+    */
     .news-detail-aside {
         clear: none;
         width: 35%;
         float: right;
+        border: none;
+        padding-bottom: 1%;
+        /*border-bottom: 1px solid #ccc;*/
+        position: relative;
+    }
+    .newsletter-detail {
+        position: absolute;
+        padding: 4%;
+        padding-top: 1%;
+        margin-left: -6%;
+        border-bottom: 1px solid #ccc;
+        
     }
     .entry-meta {
         margin-top: 0;
@@ -1113,11 +1129,7 @@ footer {
     .newsletter-detail h3 {
         line-height: 1rem;
         margin-top: 0;
-    }
-    .news-detail-aside {
-        border: none;
-        padding-bottom: 1%;
-        border-bottom: 1px solid #ccc;
+        margin-bottom: 8%;
     }
     .news-detail-form input[type=text] {
         clear: both;
