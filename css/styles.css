@@ -134,15 +134,9 @@ a:hover {
     color: #23a4cc;
 }
 
-
-/* Based on PSD for mobile for news home page, the values for h1-h6 and <p> are posted below */
-
 p {
-    font-size: 0.875rem;
-    /*(14px)*/
-    line-height: 1.25rem;
-    /*(20px)*/
-    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 h1,
@@ -151,46 +145,32 @@ h3,
 h4 {}
 
 h1 {
-    font-size: 1.313rem;
-    /*(21px)*/
-    line-height: 1.375rem;
-    /*(22px)*/
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.5rem;
+    /* 21px */
+    /*font-size: 2.25rem;*/
+    /* 36px */
+    /*font-weight: 700;*/
+    /*line-height: 0.667;*/
 }
 
 h2 {
-    font-size: 1rem;
-    line-height: 1rem;
+    font-size: 1.2rem;
+    /* 30px */
     font-weight: bold;
+    line-height: 1;
 }
 
 h3 {
-    font-size: 1.313rem;
-    /*(21px)*/
-    line-height: 1rem;
+    font-size: 1.17rem;
     font-weight: bold;
+    line-height: 1;
 }
 
 h4 {
-    font-size: 1rem;
-    line-height: 1rem;
+    font-size: 1.2;
     font-weight: bold;
-}
-
-h5 {
-    font-size: 1rem;
-    line-height: 1rem;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-h6 {
-    font-size: 0.625rem;
-    /*(10px)*/
-    line-height: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 0;
+    line-height: 1;
 }
 
 section,
@@ -350,30 +330,21 @@ nav ul .current a {
     text-align: center;
 }
 
-
-/* using id vs. class for css specificity. class does not override the font-size. */
-
-#concert-date-num {
-    font-size: 2rem;
-    line-height: 1.75rem;
-    padding-top: 2%;
-}
-
 .concert-detail {
     width: 70%;
     float: left;
     padding: 0 2%;
 }
 
-.concert-detail h5 {
+.concert-detail h4 {
     margin: 0;
 }
 
 .concert-detail p {
     margin: 0;
-    /*font-size: 0.9rem;
-    font-weight: 300;*/
-    line-height: 1rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.1rem;
 }
 
 .concert-detail-form {
@@ -419,10 +390,6 @@ nav ul .current a {
 
 /* NEWS HOMEPAGE - aside area with signups ============================= */
 
-.home-sidebar p {
-    padding-bottom: 4%;
-}
-
 .home-newsletter {
     width: 100%;
     padding-bottom: 4%;
@@ -454,7 +421,7 @@ nav ul .current a {
 .feed-item {
     clear: both;
     overflow: auto;
-    padding-bottom: 1%;
+    padding-bottom: 8%;
     border-bottom: 1px solid #ccc;
 }
 
@@ -483,70 +450,13 @@ nav ul .current a {
 }
 
 
-/* NEWS DETAIL PAGE ============================= */
-
-.news-detail-wrapper {
-    padding: 4%;
-    padding-bottom: 0;
-}
-
-.news-detail-title {
-    font-size: 1.313rem;
-    line-height: 1.5rem;
-    width: 80%;
-}
-
-.entry-meta {
-    margin-top: 0;
-    padding-left: 0;
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-}
-
-.entry-meta span {
-    margin-left: 1%;
-    margin-right: 1%;
-}
-
-.entry-meta li {
-    list-style: none;
-    display: inline;
-}
-
-.byline {
-    font-size: 1rem;
-    line-height: 1.125rem;
-}
-
-.news-detail-aside {
-    border-top: 1px solid #ccc;
-}
-
-.news-detail-form input[type=text] {
-    width: 94%;
-    padding: 2%;
-    margin-bottom: 2%;
-    border: 1px solid #ccc;
-}
-
-.news-detail-form input[type=button] {
-    width: 99%;
-    height: 2.5rem;
-}
-
-
-/*  ======================= */
-
-
-/*  ======= FOOTER ======== */
-
-
-/*  ======================= */
+/* Footer ============================= */
 
 footer {
     /* need to add clear:both property to clear the floats from news and reviews section.
        Otherwise footer mixes with last news/review section */
     clear: both;
+    padding-top: 5%;
     width: 70%;
     margin: auto;
 }
@@ -658,42 +568,6 @@ footer {
 /* ==========================================================  */
 
 @media (min-width: 768px) {
-    /* Based on PSD for TABLET for news home page, the values for h1-h6 and <p> are posted below */
-    p {
-        font-size: 0.875rem;
-        line-height: 1rem;
-        font-weight: normal;
-    }
-    h1 {
-        font-size: 1.5rem;
-        line-height: 1.375rem;
-        font-weight: bold;
-    }
-    h2 {
-        font-size: 1.313rem;
-        line-height: 1rem;
-        font-weight: bold;
-    }
-    h3 {
-        font-size: 1.313rem;
-        line-height: 1rem;
-        font-weight: bold;
-    }
-    h4 {
-        font-size: 1.125rem;
-        line-height: 1.25rem;
-        font-weight: bold;
-    }
-    h5 {
-        font-size: 1.125rem;
-        line-height: 1rem;
-        font-weight: bold;
-    }
-    h6 {
-        font-size: 0.75rem;
-        line-height: 1rem;
-        font-weight: bold;
-    }
     /*  for tablet styles */
     .grey-line {
         display: inline;
@@ -758,12 +632,6 @@ footer {
     .concerts-wrapper-2 {
         width: 42%;
         float: left;
-    }
-    .concert-detail p {
-        font-size: 1rem;
-    }
-    .concert-detail h5 {
-        margin-bottom: 2%;
     }
     .last-item {
         border-bottom: 0;
@@ -835,77 +703,12 @@ footer {
     .short-version {
         display: none;
     }
-    /* NEWS DETAIL PAGE ============================= */
-    .news-detail-wrapper {
-        clear: both;
-    }
-    .entry-meta {
-        margin-top: 0;
-        padding-left: 0;
-        font-size: 1rem;
-        line-height: 1.125rem;
-    }
-    .entry-meta span {
-        margin-left: 1%;
-        margin-right: 1%;
-    }
-    .entry-meta li {
-        list-style: none;
-        display: inline;
-    }
-    .byline {
-        font-size: 1.125rem;
-        line-height: 1.5rem;
-    }
-    .news-detail-img {
-        width: 45%;
-        float: left;
-    }
-    .detail-sub-heading {
-        width: 50%;
-        float: left;
-        padding-left: 4%;
-    }
-    .byline {
-        font-size: 1rem;
-        line-height: 1.25rem;
-    }
-    .long-version {
-        display: none;
-    }
-    .short-version {
-        display: block;
-    }
-    .detail-clear-float {
-        clear: both;
-    }
-    /* I used direct descendent combinator ">" CSS Selector that I learnt about at https://www.sitepoint.com/web-foundations/css-selectors/
-       I wanted <p> elements that were only direct children of .news-detail class. There was another p inside a div which is inside .news-detail that I didn't want affected.
-     */
-    .news-detail > p {
-        line-height: 1.5rem;
-    }
-    .newsletter-detail {
-        overflow: auto;
-        padding-bottom: 2%;
-    }
-    .news-detail-form input[type=text] {
-        width: 55%;
-        float: left;
-    }
-    .news-detail-form input[type=button] {
-        width: 38%;
-        float: left;
-        margin-left: 2%;
-        height: 3rem;
-    }
     /*  ======================= */
     /*  ======= FOOTER ======== */
     /*  ======================= */
     footer {
         width: 100%;
         clear: both;
-        padding-top: 4%;
         border-top: 1px solid #ccc;
     }
     #footer-logo {
@@ -927,53 +730,27 @@ footer {
 /* ==========================================================  */
 
 @media (min-width: 940px) {
-    /* Based on PSD for TABLET for news home page, the values for h1-h6 and <p> are posted below */
-    p {
-        font-size: 1rem;
-        line-height: 1.25rem;
-        font-weight: normal;
-    }
+    /*  for desktop styles */
     h1 {
-        font-size: 2.25rem;
-        line-height: 2.25rem;
-        font-weight: bold;
-    }
-    h2 {
-        font-size: 1.875rem;
-        line-height: 1rem;
-        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 2.6rem;
+        margin: 0;
     }
     h3 {
         font-size: 1.875rem;
-        line-height: 1.875rem;
-        font-weight: bold;
-    }
-    h4 {
-        font-size: 1.313rem;
-        line-height: 1.25rem;
-        font-weight: bold;
-    }
-    h5 {
-        font-size: 1.125rem;
         line-height: 1rem;
         font-weight: bold;
     }
-    h6 {
-        font-size: 0.75rem;
-        line-height: 1rem;
-        font-weight: bold;
-    }
-    /*  All the font changes for all the pages for for desktop styles */
+
     .faq h3 {
         font-size: 1.875rem;
         line-height: 1.875rem;
     }
+
     .home-top-info h2 {
         font-size: 1.875rem;
         line-height: 1.875rem;
     }
-    /* ============= END of font changes for desktop ========== */
-    /* ======================================================== */
     .grey-line {
         /*display: none;*/
         height: 5%;
@@ -1024,8 +801,8 @@ footer {
         border-right: 1px solid #ccc;
     }
     .home-sidebar {
-        clear: none;
-        /* clear this first as tablet version has a different float alignment */
+        clear: none; /* clear this first as tablet version has a different float alignment */
+        
         width: 33%;
         float: left;
         padding-left: 2%;
@@ -1062,25 +839,6 @@ footer {
     }
     .feed-image {
         width: 20%;
-    }
-    /* NEWS DETAIL PAGE ============================= */
-    .entry-meta {
-        margin-top: 0;
-        padding-left: 0;
-        font-size: 1rem;
-        line-height: 1.125rem;
-    }
-    .entry-meta span {
-        margin-left: 1%;
-        margin-right: 1%;
-    }
-    .entry-meta li {
-        list-style: none;
-        display: inline;
-    }
-    .byline {
-        font-size: 1.125rem;
-        line-height: 1.5rem;
     }
     /*  ======================= */
     /*  ======= FOOTER ======== */

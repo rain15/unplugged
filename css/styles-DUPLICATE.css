@@ -201,6 +201,7 @@ figure {
 }
 
 .btn {
+
     background-color: #ff1256;
     border: none;
     color: #ffffff;
@@ -494,8 +495,8 @@ nav ul .current a {
     font-size: 1.313rem;
     line-height: 1.5rem;
     width: 80%;
-}
 
+}
 .entry-meta {
     margin-top: 0;
     padding-left: 0;
@@ -521,26 +522,19 @@ nav ul .current a {
 .news-detail-aside {
     border-top: 1px solid #ccc;
 }
-
 .news-detail-form input[type=text] {
     width: 94%;
     padding: 2%;
     margin-bottom: 2%;
     border: 1px solid #ccc;
 }
-
 .news-detail-form input[type=button] {
     width: 99%;
     height: 2.5rem;
+    
 }
-
-
 /*  ======================= */
-
-
 /*  ======= FOOTER ======== */
-
-
 /*  ======================= */
 
 footer {
@@ -836,9 +830,6 @@ footer {
         display: none;
     }
     /* NEWS DETAIL PAGE ============================= */
-    .news-detail-wrapper {
-        clear: both;
-    }
     .entry-meta {
         margin-top: 0;
         padding-left: 0;
@@ -857,55 +848,12 @@ footer {
         font-size: 1.125rem;
         line-height: 1.5rem;
     }
-    .news-detail-img {
-        width: 45%;
-        float: left;
-    }
-    .detail-sub-heading {
-        width: 50%;
-        float: left;
-        padding-left: 4%;
-    }
-    .byline {
-        font-size: 1rem;
-        line-height: 1.25rem;
-    }
-    .long-version {
-        display: none;
-    }
-    .short-version {
-        display: block;
-    }
-    .detail-clear-float {
-        clear: both;
-    }
-    /* I used direct descendent combinator ">" CSS Selector that I learnt about at https://www.sitepoint.com/web-foundations/css-selectors/
-       I wanted <p> elements that were only direct children of .news-detail class. There was another p inside a div which is inside .news-detail that I didn't want affected.
-     */
-    .news-detail > p {
-        line-height: 1.5rem;
-    }
-    .newsletter-detail {
-        overflow: auto;
-        padding-bottom: 2%;
-    }
-    .news-detail-form input[type=text] {
-        width: 55%;
-        float: left;
-    }
-    .news-detail-form input[type=button] {
-        width: 38%;
-        float: left;
-        margin-left: 2%;
-        height: 3rem;
-    }
     /*  ======================= */
     /*  ======= FOOTER ======== */
     /*  ======================= */
     footer {
         width: 100%;
         clear: both;
-        padding-top: 4%;
         border-top: 1px solid #ccc;
     }
     #footer-logo {

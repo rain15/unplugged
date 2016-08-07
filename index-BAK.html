@@ -10,12 +10,12 @@
     <link rel="apple-touch-icon" href="../apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Sansita+One' rel='stylesheet' type='text/css'>
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -41,55 +41,57 @@
         </nav>
     </header>
     <div id="main-content">
-        <section class="home-top-wrapper">
-            <article class="home-top-story">
-                <figure class="home-top-img">
-                    <img src="img/top-story-photo.png" alt="Hero Image">
-                </figure>
+        <div class="home-top-wrapper">
+            <section class="home-hero-area">
+                <article class="home-top-story">
+                    <figure class="home-top-img">
+                        <img src="img/top-story-photo.png" alt="Hero Image">
+                    </figure>
+                </article>
                 <div class="home-top-info">
-                    <h1><a href="news/news-detail.html">Wilco Announces a New Album and Summer Tour</a></h1>
+                    <h2><a href="news/news-detail.html">Wilco Announces a New Album and Summer Tour</a></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas cumque eveniet est beatae iste cum harum quam voluptate vero illum vel.</p>
                 </div>
-            </article>
-        </section>
-        
-        
-        <!-- SIDE BAR -->
-        <aside class="home-sidebar">
-            <section class="home-newsletter">
-                <div class="home-newsletter-form">
-                    <h2>Newsletter Signup</h2>
-                    <form>
-                        <input type="text" class="newsletter-text">
-                        <input type="button" class="btn home-newsletter-btn" value="Sign Up">
-                    </form>
-                </div>
             </section>
-            <!-- hide on mobile version -->
-            <section class="home-upcoming">
-                <div class="upcoming">
-                    <h2>Upcoming Concerts</h2>
-                    <p class="long-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam nemo reprehenderit ut sequi magnam at, quidem laudantium placeat non necessitatibus.</p>
-                    <p class="short-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam nemo reprehenderit.</p>
-                    <!-- added href instead of button to add font awesome icons -->
-                    <a href="#" class="btn"><i class="fa fa-music"></i>&nbsp;&nbsp;See All</a>
-                </div>
-            </section>
-            <!-- hide on mobile version -->
-            <section class="home-faq">
-                <div class="faq">
-                    <h3>Frequently Asked Questions</h3> 
-                    <p class="long-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium ea accusantium, tenetur facere consectetur! Culpa magni, aperiam sapiente error voluptatibus.</p>
-                    <p class="short-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam nemo reprehenderit.</p>
-                    <a href="#" class="btn"><i class="fa fa-question-circle"></i> &nbsp;See All</a>
-                </div>
-            </section>
-        </aside>
+            <!-- hero-area -->
+            <!-- SIDE BAR -->
+            <aside class="sidebar">
+                <section class="home-newsletter">
+                    <div class="home-newsletter-form">
+                        <h3>Newsletter Signup</h3>
+                        <form>
+                            <input type="text" class="newsletter-text">
+                            <input type="button" class="btn home-newsletter-btn" value="Sign Up">
+                        </form>
+                    </div>
+                </section>
+                <!-- hide on mobile version -->
+                <section class="home-upcoming">
+                    <div class="upcoming">
+                        <h3>Upcoming Concerts</h3>
+                        <p class="long-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam nemo reprehenderit ut sequi magnam at, quidem laudantium placeat non necessitatibus.</p>
+                        <p class="short-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam nemo reprehenderit.</p>
+                        <!-- added href instead of button to add font awesome icons -->
+                        <a href="#" class="btn"><i class="fa fa-music"></i>&nbsp;&nbsp;See All</a>
+                    </div>
+                </section>
+                <!-- hide on mobile version -->
+                <section class="home-faq">
+                    <div class="faq">
+                        <h3>Frequently Asked Questions</h3>
+                        <p class="long-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium ea accusantium, tenetur facere consectetur! Culpa magni, aperiam sapiente error voluptatibus.</p>
+                        <p class="short-version">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique laboriosam nemo reprehenderit.</p>
+                        <a href="#" class="btn"><i class="fa fa-question-circle"></i> &nbsp;See All</a>
+                    </div>
+                </section>
+            </aside>
+        </div>
+        <!-- home-top-wrapper -->
         <!-- Recent News and Reviews -->
         <section class="feed">
-            <h5 class="title">Recent News & Reviews</h5>
+            <h3 class="title">Recent News & Reviews</h3>
             <article class="feed-item ">
-                <h6 class="feed-type">News</h6>
+                <h3 class="feed-type">News</h3>
                 <figure class="feed-image">
                     <a href="#"><img src="img/feed-1.png" alt="Arcade Fire"></a>
                 </figure>
@@ -99,7 +101,8 @@
                 </div>
             </article>
             <article class="feed-item">
-                <h6 class="feed-type">News</h6>
+                <hr>
+                <h3 class="feed-type">News</h3>
                 <figure class="feed-image">
                     <a href="#"><img src="img/feed-2.png" alt="Summer Festival Roundup"></a>
                 </figure>
@@ -109,7 +112,8 @@
                 </div>
             </article>
             <article class="feed-item">
-                <h6 class="feed-type">News</h6>
+                <hr>
+                <h3 class="feed-type">News</h3>
                 <figure class="feed-image">
                     <a href="#"><img src="img/feed-3.png" alt="Laura Marling and Johnny Flynn"></a>
                 </figure>
@@ -119,7 +123,8 @@
                 </div>
             </article>
             <article class="feed-item">
-                <h6 class="feed-type">Review</h6>
+                <hr>
+                <h3 class="feed-type">Review</h3>
                 <figure class="feed-image">
                     <a href="#"><img src="img/feed-4.png" alt="Mumford & Sons"></a>
                 </figure>
@@ -129,7 +134,8 @@
                 </div>
             </article>
             <article class="feed-item">
-                <h6 class="feed-type">Review</h6>
+                <hr>
+                <h3 class="feed-type">Review</h3>
                 <figure class="feed-image">
                     <a href="#"><img src="img/feed-5.png" alt="Jose Gonzalez New Album"></a>
                 </figure>
@@ -138,15 +144,20 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
                 </div>
             </article>
-            <article class="feed-item last-item">
-                <h6 class="feed-type">News</h6>
+            <article class="feed-item">
+                <hr>
+                <h3 class="feed-type">News</h3>
                 <figure class="feed-image">
                     <a href="#"><img src="img/feed-6.png" alt="The National Band"></a>
                 </figure>
-                <div class="feed-details last-item">
+                <div class="feed-details">
                     <h4><a href="#">The National Surprises Us With a New Single - Will a New Album follow?</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae corporis deleniti beatae, quos molestiae veritatis quis sunt qui. Quam magni consequatur eos neque quia, ad molestiae a quaerat aliquid commodi.</p>
                 </div>
+            </article>
+            <!-- The last horizontal rule before the footer was not aligning where it's supposed to. So I created the pseudo article below to add that last <hr> . -->
+            <article class="feed-item final-divider">
+                <hr>
             </article>
         </section>
     </div>
