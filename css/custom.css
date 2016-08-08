@@ -1219,7 +1219,6 @@ footer {
         border: none;
     }
     /* FAQ Page ============================= */
-    
     .who-we-are-nav {
         display: block;
     }
@@ -1399,6 +1398,16 @@ footer {
     .feed-image {
         width: 20%;
     }
+    .home-upcoming {
+        display: block;
+        padding-bottom: 8%;
+        border-bottom: 1px solid #ccc;
+    }
+    .home-faq {
+        display: block;
+        padding-bottom: 8%;
+        border: none;
+    }
     /* NEWS DETAIL PAGE ============================= */
     .news-detail-main {
         clear: both;
@@ -1510,7 +1519,6 @@ footer {
         margin-top: -4%;
         margin-bottom: 2%;
     }
-    
     .faq-container h1 {
         margin-top: 0;
     }
