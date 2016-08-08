@@ -201,7 +201,6 @@ figure {
 }
 
 .btn {
-
     background-color: #ff1256;
     border: none;
     color: #ffffff;
@@ -483,6 +482,14 @@ nav ul .current a {
     display: none;
 }
 
+.feed .feed-item {
+    padding-bottom: 8%;
+}
+
+.home-footer {
+    padding-top: 4%;
+}
+
 
 /* NEWS DETAIL PAGE ============================= */
 
@@ -495,8 +502,8 @@ nav ul .current a {
     font-size: 1.313rem;
     line-height: 1.5rem;
     width: 80%;
-
 }
+
 .entry-meta {
     margin-top: 0;
     padding-left: 0;
@@ -522,19 +529,82 @@ nav ul .current a {
 .news-detail-aside {
     border-top: 1px solid #ccc;
 }
+
 .news-detail-form input[type=text] {
     width: 94%;
     padding: 2%;
     margin-bottom: 2%;
     border: 1px solid #ccc;
 }
+
 .news-detail-form input[type=button] {
     width: 99%;
     height: 2.5rem;
-    
 }
+
+
+/* REVIEWS INDEX PAGE ============================= */
+
+.reviews-feed-item {
+    clear: both;
+    overflow: auto;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #ccc;
+}
+
+.reviews-feed-item h3 {
+    font-size: .75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.reviews-sidebar p {
+    margin-bottom: 0;
+}
+
+.sidebar-write-review {
+    width: 100%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar-write-review-form input[type="text"] {
+    width: 96%;
+    border: 1px solid #ccc;
+}
+
+.sidebar-write-review-form input[type="button"] {
+    width: 98%;
+    height: 2rem;
+    margin-top: 2%;
+}
+
+.reviews-title {
+    margin-top: 4%;
+}
+
+.reviews-feed .feed-item {
+    padding-bottom: 8%;
+}
+
+.reviews-footer {
+    padding-top: 4%;
+}
+
+
+/* since CSS cascades, I need these items last */
+
+.last-item {
+    border: 0;
+}
+
+
 /*  ======================= */
+
+
 /*  ======= FOOTER ======== */
+
+
 /*  ======================= */
 
 footer {
@@ -794,9 +864,6 @@ footer {
     .feed-details {
         padding-top: 3%;
     }
-    .last-item {
-        border: 0;
-    }
     .home-sidebar {
         width: 39%;
         float: right;
@@ -830,6 +897,9 @@ footer {
         display: none;
     }
     /* NEWS DETAIL PAGE ============================= */
+    .news-detail-wrapper {
+        clear: both;
+    }
     .entry-meta {
         margin-top: 0;
         padding-left: 0;
@@ -848,12 +918,90 @@ footer {
         font-size: 1.125rem;
         line-height: 1.5rem;
     }
+    .news-detail-img {
+        width: 45%;
+        float: left;
+    }
+    .detail-sub-heading {
+        width: 50%;
+        float: left;
+        padding-left: 4%;
+    }
+    .byline {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    .long-version {
+        display: none;
+    }
+    .short-version {
+        display: block;
+    }
+    .detail-clear-float {
+        clear: both;
+    }
+    /* I used direct descendent combinator ">" CSS Selector that I learnt about at https://www.sitepoint.com/web-foundations/css-selectors/
+       I wanted <p> elements that were only direct children of .news-detail class. There was another p inside a div which is inside .news-detail that I didn't want affected.
+     */
+    .news-detail > p {
+        line-height: 1.5rem;
+    }
+    .newsletter-detail {
+        overflow: auto;
+        padding-bottom: 2%;
+    }
+    .news-detail-form input[type=text] {
+        width: 55%;
+        float: left;
+    }
+    .news-detail-form input[type=button] {
+        width: 38%;
+        float: left;
+        margin-left: 2%;
+        height: 3rem;
+    }
+    /* REVIEWS INDEX PAGE ============================= */
+    .sidebar-write-review {
+        overflow: auto;
+    }
+    .sidebar-write-review-form p {
+        width: 60%;
+        float: left;
+    }
+    .sidebar-write-review-form input[type="button"] {
+        width: 35%;
+        float: right;
+        height: 2rem;
+        margin-top: 2%;
+    }
+    .reviews-feed {
+        clear: both;
+        width: 100%;
+        margin-left: 0;
+        border: none;
+    }
+    .reviews-feed-item {
+        overflow: auto;
+        padding-bottom: 4%;
+        border-bottom: 1px solid #ccc;
+    }
+    .reviews-feed-image {
+        width: 20%;
+    }
+    .reviews-feed-details h4 {
+        padding-top: 3%;
+    }
+    /* since CSS cascades, I need these items last */
+    .last-item {
+        border: 0;
+    }
     /*  ======================= */
     /*  ======= FOOTER ======== */
     /*  ======================= */
     footer {
         width: 100%;
         clear: both;
+        padding-top: 4%;
         border-top: 1px solid #ccc;
     }
     #footer-logo {
@@ -1012,6 +1160,33 @@ footer {
         width: 20%;
     }
     /* NEWS DETAIL PAGE ============================= */
+    .news-detail-main {
+        clear: both;
+        width: 60%;
+        float: left;
+        padding-right: 3%;
+        border-right: 1px solid #ccc;
+    }
+    /* fixed the issue where newsletter signup horizontal rule was not touching vertical rule between news detail section and newsletter aside 
+    http://stackoverflow.com/questions/4131490/any-way-to-limit-border-length
+    used relative and absolute positioning to achieve this.
+    */
+    .news-detail-aside {
+        clear: none;
+        width: 35%;
+        float: right;
+        border: none;
+        padding-bottom: 1%;
+        /*border-bottom: 1px solid #ccc;*/
+        position: relative;
+    }
+    .newsletter-detail {
+        position: absolute;
+        padding: 4%;
+        padding-top: 1%;
+        margin-left: -6%;
+        border-bottom: 1px solid #ccc;
+    }
     .entry-meta {
         margin-top: 0;
         padding-left: 0;
@@ -1026,9 +1201,46 @@ footer {
         list-style: none;
         display: inline;
     }
+    .news-detail-img {
+        width: 100%;
+    }
+    .detail-sub-heading {
+        width: 100%;
+        clear: none;
+        padding-left: 0;
+    }
+    .news-detail-title {
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        width: 100%;
+    }
     .byline {
         font-size: 1.125rem;
         line-height: 1.5rem;
+    }
+    .news-detail > p {
+        line-height: 1.375rem;
+    }
+    .newsletter-detail h3 {
+        line-height: 1rem;
+        margin-top: 0;
+        margin-bottom: 8%;
+    }
+    .news-detail-form input[type=text] {
+        clear: both;
+        width: 95%;
+        height: 2rem;
+    }
+    .news-detail-form input[type=button] {
+        clear: both;
+        width: 99%;
+        margin-left: 0;
+        margin-top: 2%;
+    }
+
+    /* since CSS cascades, I need these items last */
+    .last-item {
+        border: 0;
     }
     /*  ======================= */
     /*  ======= FOOTER ======== */

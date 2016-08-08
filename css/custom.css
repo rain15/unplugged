@@ -482,6 +482,14 @@ nav ul .current a {
     display: none;
 }
 
+.feed .feed-item {
+    padding-bottom: 8%;
+}
+
+.home-footer {
+    padding-top: 4%;
+}
+
 
 /* NEWS DETAIL PAGE ============================= */
 
@@ -532,6 +540,62 @@ nav ul .current a {
 .news-detail-form input[type=button] {
     width: 99%;
     height: 2.5rem;
+}
+
+
+/* REVIEWS INDEX PAGE ============================= */
+
+.reviews-feed-item {
+    clear: both;
+    overflow: auto;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #ccc;
+}
+
+.reviews-feed-item h3 {
+    font-size: .75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.reviews-sidebar p {
+    margin-bottom: 0;
+}
+
+.sidebar-write-review {
+    width: 100%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar-write-review-form input[type="text"] {
+    width: 96%;
+    border: 1px solid #ccc;
+}
+
+.sidebar-write-review-form input[type="button"] {
+    width: 98%;
+    height: 2rem;
+    margin-top: 2%;
+}
+
+.reviews-title {
+    margin-top: 4%;
+}
+
+.reviews-feed .feed-item {
+    padding-bottom: 8%;
+}
+
+.reviews-footer {
+    padding-top: 4%;
+}
+
+
+/* since CSS cascades, I need these items last */
+
+.last-item {
+    border: 0;
 }
 
 
@@ -800,9 +864,6 @@ footer {
     .feed-details {
         padding-top: 3%;
     }
-    .last-item {
-        border: 0;
-    }
     .home-sidebar {
         width: 39%;
         float: right;
@@ -898,6 +959,41 @@ footer {
         float: left;
         margin-left: 2%;
         height: 3rem;
+    }
+    /* REVIEWS INDEX PAGE ============================= */
+    .sidebar-write-review {
+        overflow: auto;
+    }
+    .sidebar-write-review-form p {
+        width: 60%;
+        float: left;
+    }
+    .sidebar-write-review-form input[type="button"] {
+        width: 35%;
+        float: right;
+        height: 2rem;
+        margin-top: 2%;
+    }
+    .reviews-feed {
+        clear: both;
+        width: 100%;
+        margin-left: 0;
+        border: none;
+    }
+    .reviews-feed-item {
+        overflow: auto;
+        padding-bottom: 4%;
+        border-bottom: 1px solid #ccc;
+    }
+    .reviews-feed-image {
+        width: 20%;
+    }
+    .reviews-feed-details h4 {
+        padding-top: 3%;
+    }
+    /* since CSS cascades, I need these items last */
+    .last-item {
+        border: 0;
     }
     /*  ======================= */
     /*  ======= FOOTER ======== */
@@ -1090,7 +1186,6 @@ footer {
         padding-top: 1%;
         margin-left: -6%;
         border-bottom: 1px solid #ccc;
-        
     }
     .entry-meta {
         margin-top: 0;
@@ -1141,6 +1236,28 @@ footer {
         width: 99%;
         margin-left: 0;
         margin-top: 2%;
+    }
+    /* REVIEWS INDEX PAGE ============================= */
+    .sidebar-write-review {
+        width: 35%;
+        float: right;
+    }
+    .sidebar-write-review-form p {
+        width: 100%;
+        float: none;
+    }
+    .sidebar-write-review-form input[type="button"] {
+        width: 100%;
+        float: none;
+        height: 2rem;
+        margin-top: 4%;
+    }
+    .reviews-feed-details h4 {
+        padding-top: 0;
+    }
+    /* since CSS cascades, I need these items last */
+    .last-item {
+        border: 0;
     }
     /*  ======================= */
     /*  ======= FOOTER ======== */
