@@ -542,6 +542,10 @@ nav ul .current a {
     height: 2.5rem;
 }
 
+.detail-sub-heading .long-version {
+    display: none;
+}
+
 
 /* REVIEWS INDEX PAGE ============================= */
 
@@ -592,7 +596,142 @@ nav ul .current a {
 }
 
 
+/* REVIEWS DETAIL PAGE ============================= 
+   all the css for news detail page worked for this page too. 
+   No new additions needed at this time.
+*/
+
+
+/* ABOUT US Page ============================= */
+
+#about-main-content {
+    clear: both;
+    width: 94%;
+    margin: auto;
+    max-width: 320px;
+}
+
+.contact-info {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+
+/* used this link for solution - http://stackoverflow.com/questions/1713048/how-to-style-dt-and-dd-so-they-are-on-the-same-line */
+
+dl {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+dt {
+    font-weight: bold;
+    float: left;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+dd {
+    float: left;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 5%;
+}
+
+address {
+    font-style: normal;
+}
+
+.map-container {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    padding-bottom: 75%;
+    /* padding-bottom sets the map's aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mission {
+    width: 80%;
+    margin: auto;
+}
+
+.team {
+    padding-left: 10%;
+    /* for alignment */
+}
+
+.team-member {
+    padding-top: 5%;
+}
+
+.team-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    padding-bottom: 40%;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+}
+
+#team-img-01 {
+    background-image: url('../img/team-jack.png');
+}
+
+#team-img-02 {
+    background-image: url('../img/team-lana.png');
+}
+
+#team-img-03 {
+    background-image: url('../img/team-willow.png');
+}
+
+.team-name {
+    padding-top: 0;
+    margin-top: 2%;
+    /* This aligned the text to align vertically with the image on the left */
+    margin-bottom: 0;
+}
+
+.team-title {
+    margin-top: 2%;
+}
+
+.team-description {
+    display: none;
+}
+
+.separator {
+    clear: both;
+    padding-top: 20%;
+    margin-bottom: 4%;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+
+/*  ========================================== */
+
+
 /* since CSS cascades, I need these items last */
+
+
+/*  ========================================== */
 
 .last-item {
     border: 0;
@@ -991,7 +1130,49 @@ footer {
     .reviews-feed-details h4 {
         padding-top: 3%;
     }
+    /* REVIEWS DETAIL PAGE ============================= */
+    /* all the css for news detail page worked for this page too. No new additions needed at this time. */
+    /* ======================================================================================= */
+    /* ABOUT US Page ============================= */
+    .about-divider {
+        clear: both;
+        border-bottom: 1px solid #ccc;
+    }
+    .contact-info {
+        clear: both;
+        width: 40%;
+        float: left;
+        margin: 0;
+        padding-left: 4%;
+        padding-bottom: 0;
+    }
+    .map-container {
+        width: 45%;
+        float: right;
+        padding-bottom: 30%;
+        margin: 2%;
+        margin-bottom: 4%;
+        border: 2px solid #000;
+    }
+    .mission {
+        clear: both;
+        width: 94%;
+        margin: 0 4%;
+        padding-bottom: 2%;
+        border-bottom: 1px solid #ccc;
+    }
+    .team {
+        padding-left: 4%;
+    }
+    .team-name {
+        margin-top: 0;
+    }
+    .separator {
+        border: none;
+    }
+    /*  ========================================== */
     /* since CSS cascades, I need these items last */
+    /*  ========================================== */
     .last-item {
         border: 0;
     }
@@ -1255,7 +1436,16 @@ footer {
     .reviews-feed-details h4 {
         padding-top: 0;
     }
+    /* REVIEWS DETAIL PAGE ============================= */
+    /* all the css for news detail page worked for this page too. No new additions needed at this time. */
+    /*  =============================================================================================== */
+    /* ABOUT US Page ============================= */
+    .team-description {
+        display: block;
+    }
+    /*  ========================================== */
     /* since CSS cascades, I need these items last */
+    /*  ========================================== */
     .last-item {
         border: 0;
     }
