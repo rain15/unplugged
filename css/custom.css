@@ -725,6 +725,54 @@ address {
 }
 
 
+/* FAQ Page ============================= */
+
+.faq-subnav {
+    clear: both;
+    width: 45%;
+}
+
+.faq-subnav ul {
+    padding-top: 0;
+    padding-bottom: 2%;
+}
+
+.faq-subnav ul li {
+    background: none;
+    border: none;
+}
+
+.who-we-are-nav {
+    display: none;
+}
+
+#faq-main-content {
+    clear: both;
+    width: 94%;
+    margin: auto;
+    max-width: 320px;
+}
+
+.faq-container {
+    width: 100%;
+    padding: 4%;
+    border-top: 1px solid #ccc;
+}
+
+.faq-details {
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-details h4 {
+    font-weight: normal;
+}
+
+.last-faq-details {
+    padding-bottom: 10%;
+    margin-bottom: 4%;
+}
+
+
 /*  ========================================== */
 
 
@@ -1170,6 +1218,17 @@ footer {
     .separator {
         border: none;
     }
+    /* FAQ Page ============================= */
+    
+    .who-we-are-nav {
+        display: block;
+    }
+    .faq-container {
+        overflow: auto;
+    }
+    .last-faq-details {
+        border: none;
+    }
     /*  ========================================== */
     /* since CSS cascades, I need these items last */
     /*  ========================================== */
@@ -1442,6 +1501,21 @@ footer {
     /* ABOUT US Page ============================= */
     .team-description {
         display: block;
+    }
+    /* FAQ Page ============================= */
+    .faq-subnav {
+        clear: both;
+        width: 42%;
+        float: right;
+        margin-top: -4%;
+        margin-bottom: 2%;
+    }
+    
+    .faq-container h1 {
+        margin-top: 0;
+    }
+    .faq-details {
+        padding-bottom: 4%;
     }
     /*  ========================================== */
     /* since CSS cascades, I need these items last */

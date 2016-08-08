@@ -603,6 +603,7 @@ nav ul .current a {
 
 
 /* ABOUT US Page ============================= */
+
 #about-main-content {
     clear: both;
     width: 94%;
@@ -651,7 +652,7 @@ address {
     margin: auto;
     position: relative;
     padding-bottom: 75%;
-    /* this sets the map's aspect ratio */
+    /* padding-bottom sets the map's aspect ratio */
     height: 0;
     overflow: hidden;
 }
@@ -722,8 +723,35 @@ address {
     margin-bottom: 4%;
     border-bottom: 1px solid #CCCCCC;
 }
+/* FAQ Page ============================= */
+#faq-main-content {
+    clear: both;
+    width: 94%;
+    margin: auto;
+    max-width: 320px;
+}
+
+.faq-container {
+    width: 100%;
+    padding: 4%;
+}
+
+
+.faq-details {
+    border-bottom: 1px solid #ccc;
+}
+
+.last-faq-details {
+    padding-bottom: 10%;
+    margin-bottom: 4%;
+}
+
 /*  ========================================== */
+
+
 /* since CSS cascades, I need these items last */
+
+
 /*  ========================================== */
 
 .last-item {
@@ -1125,11 +1153,47 @@ footer {
     }
     /* REVIEWS DETAIL PAGE ============================= */
     /* all the css for news detail page worked for this page too. No new additions needed at this time. */
-    
+    /* ======================================================================================= */
+    /* ABOUT US Page ============================= */
+    .about-divider {
+        clear: both;
+        border-bottom: 1px solid #ccc;
+    }
+    .contact-info {
+        clear: both;
+        width: 40%;
+        float: left;
+        margin: 0;
+        padding-left: 4%;
+        padding-bottom: 0;
+    }
+    .map-container {
+        width: 45%;
+        float: right;
+        padding-bottom: 30%;
+        margin: 2%;
+        margin-bottom: 4%;
+        border: 2px solid #000;
+    }
+    .mission {
+        clear: both;
+        width: 94%;
+        margin: 0 4%;
+        padding-bottom: 2%;
+        border-bottom: 1px solid #ccc;
+    }
+    .team {
+        padding-left: 4%;
+    }
+    .team-name {
+        margin-top: 0;
+    }
+    .separator {
+        border: none;
+    }
     /*  ========================================== */
     /* since CSS cascades, I need these items last */
     /*  ========================================== */
-    
     .last-item {
         border: 0;
     }
@@ -1395,6 +1459,11 @@ footer {
     }
     /* REVIEWS DETAIL PAGE ============================= */
     /* all the css for news detail page worked for this page too. No new additions needed at this time. */
+    /*  =============================================================================================== */
+    /* ABOUT US Page ============================= */
+    .team-description {
+        display: block;
+    }
     /*  ========================================== */
     /* since CSS cascades, I need these items last */
     /*  ========================================== */
