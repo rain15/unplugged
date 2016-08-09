@@ -993,9 +993,6 @@ footer {
         border: 0;
     }
     #main-content {
-        clear: both;
-        width: 94%;
-        margin: auto;
         max-width: 768px;
         /* adds the horizontal rule */
         /*border-bottom: 1px solid #CCCCCC;*/
@@ -1323,9 +1320,6 @@ footer {
         padding-top: 4%;
     }
     #main-content {
-        clear: both;
-        width: 94%;
-        margin: auto;
         max-width: 1400px;
     }
     /* CONCERTS Page ============================= */
