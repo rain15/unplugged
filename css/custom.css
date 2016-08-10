@@ -301,7 +301,7 @@ nav ul .current a {
     clear: both;
     width: 94%;
     margin: auto;
-    max-width: 320px;
+    /*max-width: 320px;*/
 }
 
 
@@ -608,7 +608,7 @@ nav ul .current a {
     clear: both;
     width: 94%;
     margin: auto;
-    max-width: 320px;
+    /*max-width: 320px;*/
 }
 
 .contact-info {
@@ -750,7 +750,7 @@ address {
     clear: both;
     width: 94%;
     margin: auto;
-    max-width: 320px;
+    /*max-width: 320px;*/
 }
 
 .faq-container {
@@ -993,7 +993,7 @@ footer {
         border: 0;
     }
     #main-content {
-        max-width: 768px;
+        /*max-width: 768px;*/
         /* adds the horizontal rule */
         /*border-bottom: 1px solid #CCCCCC;*/
     }
@@ -1317,11 +1317,11 @@ footer {
     }
     nav ul {
         /* the li nav items were being pushed down in desktop version with grey background. so padding-top was adjusted to overwrite tablet version of nav ul property. */
-        padding-top: 4%;
+        padding-top: 5%;
     }
-    #main-content {
+    /*#main-content {
         max-width: 1400px;
-    }
+    }*/
     /* CONCERTS Page ============================= */
     .upcoming-concerts-container {
         width: 65%;
@@ -1384,7 +1384,7 @@ footer {
     }
     .feed-details {
         width: 75%;
-        padding-top: 5.5%;
+        padding-top: 6%;
     }
     .feed-details p {
         display: block;
