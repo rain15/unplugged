@@ -1388,6 +1388,7 @@ footer {
     }
     .feed-details p {
         display: block;
+        max-width: 700px;
     }
     .feed-image {
         width: 20%;
